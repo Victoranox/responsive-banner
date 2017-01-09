@@ -1,40 +1,37 @@
 html {
-  font-family: Georgia, cursive;
+  font-family: Georgia, serif;
   color: #fff;
 }
 
 section {
   background-color: #495562;
+  position: relative;
 }
 
 .btn, .btn-ghost {
-  display: inline-block;
+  max-width: 25em;
   color: #efefef;
-  border-color: #efefef;
-}
-
-.about-content {
-
-  max-width:
+  border-color: #97a49b;
 }
 
 .para {
   display: inline-block;
-  max-width: 50em;
-  align: center;
+  max-width: 25em;
 }
 
 .btn {
   max-width: 25em;
 }
 
-section {
-  max-height: 500px;
-  position: relative;
-}
+@media only screen and (min-width: 42em) {
 
+  .ctr {
+    max-width: 50em;
+  }
 
-@media only screen and (min-width: 35em) {
+  section {
+    max-height: 500px;
+  }
 
   .about-content {
     bottom: 0;
@@ -46,8 +43,8 @@ section {
   }
 
   .btn {
-    float: right;
-    align-items: bottom; 
+    bottom: 70px;
+    position: absolute;
   }
 
 }
